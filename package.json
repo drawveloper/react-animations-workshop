@@ -13,7 +13,11 @@
     "test": "npm run lint"
   },
   "author": "",
-  "license": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/firstdoit/react-animations-workshop.git"
+  },
   "dependencies": {
     "alt": "0.16.10",
     "autoprefixer-core": "^5.2.1",
