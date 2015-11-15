@@ -277,6 +277,28 @@ export default class extends React.Component {
             margin="20px auto"/>
         </Slide>
 
+        {
+        // Part 4 - Animation components
+        }
+
+        <Slide>
+          <Heading size={1} fit lineHeight={1.2}>
+            {"Animation components"}
+          </Heading>
+        </Slide>
+
+        <Slide>
+          <Heading size={1} fit lineHeight={1.2}>
+            {"<FadeAnimation/>"}
+          </Heading>
+        </Slide>
+
+        <Slide>
+          <Heading size={4}>
+            <Link href="http://codepen.io/gadr90/pen/Gpwdbq?editors=011">Codepen</Link>
+          </Heading>
+        </Slide>
+
         <Slide>
           <Heading size={4}>
             <Link href="https://www.google.com/design/spec/material-design/introduction.html">Google Material Design</Link>
