@@ -1,0 +1,9 @@
+.list-enter {
+  max-height: 0;
+  margin-top: 0;
+}
+.list-enter.list-enter-active {
+  max-height: 22px;
+  margin-top: 16px;
+  transition: all 500ms ease-in;
+}

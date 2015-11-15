@@ -95,3 +95,50 @@ html, body {
   /*background-color: blue;*/
   transition: opacity 1000ms ease-in;
 }
+
+.list-container p {
+  margin-bottom: 0;
+  overflow: hidden;
+  margin-top: 26px;
+}
+
+.list {
+  height: 200px;
+  margin-top: 26px;
+}
+
+.list-enter {
+  max-height: 0;
+  margin-top: 0;
+}
+
+.list-enter.list-enter-active {
+  max-height: 35px;
+  margin-top: 26px;
+  transition: all 500ms ease-in;
+}
+
+.list-leave {
+  max-height: 35px;
+  margin-top: 26px;
+  opacity: 1;
+}
+
+.list-leave.list-leave-active {
+  max-height: 0;
+  margin-top: 0;
+  transition: all 500ms ease-in;
+}
+
+.list-container button {
+  background-color: white;
+  border: 1px solid rgb(64, 72, 83);
+  border-radius: 5px;
+  padding: 10px;
+  margin-left: 5px;
+  outline: none;
+}
+
+.list-container {
+  font-size: 160%;
+}

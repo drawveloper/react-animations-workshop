@@ -39,6 +39,52 @@ class TransitionExample extends React.Component {
   }
 }
 
+let index = 0;
+
+class TransitionListExample extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {items: []};
+  }
+
+  handleAdd() {
+    this.setState({
+      items: this.state.items.concat(["List Item " + this.state.items.length])
+    })
+  }
+
+  handleRemove() {
+    this.setState({
+      items: this.state.items.slice(0, this.state.items.length - 1)
+    })
+  }
+
+  renderItems() {
+    return (
+      this.state.items.map((i) => {
+        return <p key={i}>{i}</p>
+      })
+    )
+  }
+
+  render() {
+    return (
+      <div className="list-container">
+        <button onClick={this.handleAdd.bind(this)}>Add</button>
+        <button onClick={this.handleRemove.bind(this)}>Remove</button>
+        <CSSTransitionGroup
+            className="list"
+            component="div"
+            transitionName="list"
+            transitionEnterTimeout={500}
+            transitionLeaveTimeout={500}>
+            {this.renderItems()}
+        </CSSTransitionGroup>
+      </div>
+    )
+  }
+}
+
 export default class extends React.Component {
   render() {
     return (
@@ -275,6 +321,17 @@ export default class extends React.Component {
             lang="js"
             source={require("raw!./react2.jsx.example")}
             margin="20px auto"/>
+        </Slide>
+
+        <Slide>
+          <CodePane
+            lang="js"
+            source={require("raw!./react2.css.example")}
+            margin="20px auto"/>
+        </Slide>
+
+        <Slide>
+          <TransitionListExample/>
         </Slide>
 
         {
