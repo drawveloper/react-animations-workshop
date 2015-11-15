@@ -1,0 +1,97 @@
+.spectacle-slide {
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+/* Firefox */
+
+_:-moz-tree-row(hover), .spectacle-deck {
+  perspective: 1000px;
+}
+
+_:-moz-tree-row(hover), ul .appear {
+  display: inline;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #FF0000;
+  }
+  50% {
+    background-color: #00FF00;
+  }
+  100% {
+    background-color: #0000FF;
+  }
+}
+
+.pulse-example {
+  animation: pulse 10s infinite;
+}
+
+@keyframes pulse-2 {
+  0%, 100% {
+    background-color: #FF0000;
+  }
+  33% {
+    background-color: #00FF00;
+  }
+  66% {
+    background-color: #0000FF;
+  }
+}
+
+.pulse-example-2 {
+  animation: pulse-2 10s infinite;
+}
+
+.transition-example {
+  background-color: red;
+  transition: background-color 1s;
+}
+
+.transition-example:hover {
+  background-color: green;
+}
+
+.transition-example-2 {
+  background-color: red;
+}
+
+.transition-example-2:hover {
+  background-color: green;
+  transition: background-color 1s;
+}
+
+.example-enter {
+  opacity: 0.01;
+  /*background-color: red;*/
+}
+
+.example-enter.example-enter-active {
+  opacity: 1;
+  /*background-color: green;*/
+  transition: opacity 1000ms ease-in;
+}
+
+.example-leave {
+  /*background-color: red;*/
+  opacity: 1;
+}
+
+.example-leave.example-leave-active {
+  opacity: 0.01;
+  /*background-color: blue;*/
+  transition: opacity 1000ms ease-in;
+}
