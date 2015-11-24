@@ -62,14 +62,14 @@ class TransitionListExample extends React.Component {
   renderItems() {
     return (
       this.state.items.map((i) => {
-        return <p key={i}>{i}</p>
+        return <p key={i} className="list-item">{i}</p>
       })
     )
   }
 
   render() {
     return (
-      <div className="list-container">
+      <div className={"list-container " + this.props.className}>
         <button onClick={this.handleAdd.bind(this)}>Add</button>
         <button onClick={this.handleRemove.bind(this)}>Remove</button>
         <CSSTransitionGroup
@@ -384,7 +384,11 @@ export default class extends React.Component {
         </Slide>
 
         <Slide>
-          <TransitionListExample/>
+          <TransitionListExample className="example-1"/>
+        </Slide>
+
+        <Slide>
+          <TransitionListExample className="example-2"/>
         </Slide>
 
         {

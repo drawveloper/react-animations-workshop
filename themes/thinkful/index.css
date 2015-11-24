@@ -107,26 +107,62 @@ html, body {
   margin-top: 26px;
 }
 
-.list-enter {
+.list-container.example-1 .list-item {
+  background-color: #ccc;
+}
+
+.list-container.example-1 .list-enter {
   max-height: 0;
   margin-top: 0;
 }
 
-.list-enter.list-enter-active {
-  max-height: 35px;
+.list-container.example-1 .list-enter.list-enter-active {
+  max-height: 54px;
   margin-top: 26px;
   transition: all 500ms ease-in;
 }
 
-.list-leave {
-  max-height: 35px;
+.list-container.example-1 .list-leave {
+  max-height: 54px;
   margin-top: 26px;
   opacity: 1;
 }
 
-.list-leave.list-leave-active {
+.list-container.example-1 .list-leave.list-leave-active {
   max-height: 0;
   margin-top: 0;
+  transition: all 500ms ease-in;
+}
+
+.list-container.example-2 .list-item {
+  background-color: #ccc;
+  padding: 10px;
+}
+
+.list-container.example-2 .list-enter {
+  max-height: 0;
+  margin-top: 0;
+  padding: 0;
+}
+
+.list-container.example-2 .list-enter.list-enter-active {
+  max-height: 54px;
+  margin-top: 26px;
+  padding: 10px;
+  transition: all 500ms ease-in;
+}
+
+.list-container.example-2 .list-leave {
+  max-height: 54px;
+  margin-top: 26px;
+  padding: 10px;
+  opacity: 1;
+}
+
+.list-container.example-2 .list-leave.list-leave-active {
+  max-height: 0;
+  margin-top: 0;
+  padding: 0;
   transition: all 500ms ease-in;
 }
 
