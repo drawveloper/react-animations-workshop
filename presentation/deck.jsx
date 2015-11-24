@@ -135,6 +135,12 @@ export default class extends React.Component {
         </Slide>
 
         <Slide>
+          <Heading size={4}>
+            1. Create authenticity.
+          </Heading>
+        </Slide>
+
+        <Slide>
           <BlockQuote>
             "Watching an object move demonstrates whether it’s light, heavy, flexible, rigid, small or large."
           </BlockQuote>
@@ -142,8 +148,42 @@ export default class extends React.Component {
 
         <Slide>
           <BlockQuote>
+            "Motion in material design should embrace the familiarity and real-world behavior of physical objects"
+          </BlockQuote>
+        </Slide>
+
+        <Slide>
+          <video id="1-None_0B3T7oTWa3HiFOWhhS1d1d1FGcEk" crossorigin="anonymous" preload="metadata" loop="loop"
+            style={{maxHeight: "300px"}}>
+            <source src="//material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B3T7oTWa3HiFS2hrd3dPVVFfdHM/animation-authenticmotion-massandweight-do.webm" type="video/webm" />
+            <source src="//material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B3T7oTWa3HiFOWhhS1d1d1FGcEk/animation-authenticmotion-massandweight-do.mp4" type="video/mp4" />
+          </video>
+        </Slide>
+
+        <Slide>
+          <Heading size={4}>
+            2. Respond to user input.
+          </Heading>
+        </Slide>
+
+        <Slide>
+          <BlockQuote>
             "Responsive interaction encourages deeper exploration of an app by creating timely, logical, and delightful screen reactions to user input."
           </BlockQuote>
+        </Slide>
+
+        <Slide>
+          <video id="1-None_0B3T7oTWa3HiFcDFYVWp0QUVGSEE" crossorigin="anonymous" preload="metadata" loop="loop"
+            style={{maxHeight:"600px"}}>
+            <source src="//material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B3T7oTWa3HiFOFFrMHpqN3NMQkU/animation_responsiveinteraction_userinput_materialresponse.webm" type="video/webm" />
+            <source src="//material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0B3T7oTWa3HiFcDFYVWp0QUVGSEE/animation_responsiveinteraction_userinput_materialresponse.mp4" type="video/mp4" />
+          </video>
+        </Slide>
+
+        <Slide>
+          <Heading size={4}>
+            3. Focus user attention.
+          </Heading>
         </Slide>
 
         <Slide>
@@ -159,12 +199,20 @@ export default class extends React.Component {
         </Slide>
 
         <Slide>
+          <video id="1-None_0Bzhp5Z4wHba3UHQzVFRTeEJHRkE" crossorigin="anonymous" preload="metadata" loop="loop" tabindex="0"
+            style={{maxHeight:"650px"}}>
+            <source src="//material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3RXRFb0tRZEZDUUU/animation_meaninfultransitions_considerations_do.webm" type="video/webm" />
+            <source src="//material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bzhp5Z4wHba3UHQzVFRTeEJHRkE/animation_meaninfultransitions_considerations_do.mp4" type="video/mp4" />
+          </video>
+        </Slide>
+
+        <Slide>
           <Heading size={1}>
             Why animate?
           </Heading>
           <Appear>
             <Heading size={4}>
-              1. Inform the user.
+              1. Create authenticity.
             </Heading>
           </Appear>
           <Appear>
