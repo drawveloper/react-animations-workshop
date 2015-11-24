@@ -90,13 +90,20 @@ export default class extends React.Component {
     return (
       <Deck progress='bar' transition={ [ 'fade' ] } transitionDuration={333}>
         <Slide>
-          <Heading size={1} fit caps lineHeight={1.2}>
-            Master Animations
-          </Heading>
+          <Appear>
+            <Heading size={1} caps lineHeight={1.2}>
+              Head Start
+            </Heading>
+          </Appear>
           <Heading size={3} fit>
-            with React CSSTransitionGroup
+            CSS Animations
           </Heading>
-          <Text>Guilherme Rodrigues - firstdoit.com</Text>
+          <Appear>
+            <Heading size={3}>
+              with React
+            </Heading>
+            <Text>Guilherme Rodrigues - firstdoit.com</Text>
+          </Appear>
         </Slide>
         <Slide>
           <Heading size={1} fit>

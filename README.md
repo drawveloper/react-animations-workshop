@@ -1,6 +1,6 @@
-# Master Animations with React CSS Transition Group
+# Head Start CSS Animations with React
 
-Presentation for the [React Animations](https://open-sessions.thinkful.com/workshops/master-animations-with-react-css-transition-group-996/) workshop at Thinkful.
+Presentation for the [React Animations](https://open-sessions.thinkful.com/workshops/head-start-css-animations-with-react-1115/) workshop at Thinkful.
 
 ## Getting started
 
