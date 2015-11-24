@@ -258,6 +258,11 @@ export default class extends React.Component {
         </Slide>
 
         <Slide>
+          <Heading size={1}>Question</Heading>
+          <Heading size={3}>Can we improve this loop?</Heading>
+        </Slide>
+
+        <Slide>
           <CodePane
             lang="css"
             source={require("raw!./animation2.css.example")}
