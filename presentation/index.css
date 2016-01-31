@@ -1,0 +1,180 @@
+.spectacle-slide {
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+/* Firefox */
+
+_:-moz-tree-row(hover), .spectacle-deck {
+  perspective: 1000px;
+}
+
+_:-moz-tree-row(hover), ul .appear {
+  display: inline;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #FF0000;
+  }
+  50% {
+    background-color: #00FF00;
+  }
+  100% {
+    background-color: #0000FF;
+  }
+}
+
+.pulse-example {
+  animation: pulse 10s infinite;
+}
+
+@keyframes pulse-2 {
+  0%, 100% {
+    background-color: #FF0000;
+  }
+  33% {
+    background-color: #00FF00;
+  }
+  66% {
+    background-color: #0000FF;
+  }
+}
+
+.pulse-example-2 {
+  animation: pulse-2 10s infinite;
+}
+
+.transition-example {
+  background-color: red;
+  transition: background-color 1s;
+}
+
+.transition-example:hover {
+  background-color: green;
+}
+
+.transition-example-2 {
+  background-color: red;
+}
+
+.transition-example-2:hover {
+  background-color: green;
+  transition: background-color 1s;
+}
+
+.example-enter {
+  opacity: 0.01;
+  /*background-color: red;*/
+}
+
+.example-enter.example-enter-active {
+  opacity: 1;
+  /*background-color: green;*/
+  transition: opacity 1000ms ease-in;
+}
+
+.example-leave {
+  /*background-color: red;*/
+  opacity: 1;
+}
+
+.example-leave.example-leave-active {
+  opacity: 0.01;
+  /*background-color: blue;*/
+  transition: opacity 1000ms ease-in;
+}
+
+.list-container p {
+  margin-bottom: 0;
+  overflow: hidden;
+  margin-top: 26px;
+}
+
+.list {
+  height: 200px;
+  margin-top: 26px;
+}
+
+.list-container.example-1 .list-item {
+  background-color: #ccc;
+}
+
+.list-container.example-1 .list-enter {
+  max-height: 0;
+  margin-top: 0;
+}
+
+.list-container.example-1 .list-enter.list-enter-active {
+  max-height: 54px;
+  margin-top: 26px;
+  transition: all 500ms ease-in;
+}
+
+.list-container.example-1 .list-leave {
+  max-height: 54px;
+  margin-top: 26px;
+  opacity: 1;
+}
+
+.list-container.example-1 .list-leave.list-leave-active {
+  max-height: 0;
+  margin-top: 0;
+  transition: all 500ms ease-in;
+}
+
+.list-container.example-2 .list-item {
+  background-color: #ccc;
+  padding: 10px;
+}
+
+.list-container.example-2 .list-enter {
+  max-height: 0;
+  margin-top: 0;
+  padding: 0;
+}
+
+.list-container.example-2 .list-enter.list-enter-active {
+  max-height: 54px;
+  margin-top: 26px;
+  padding: 10px;
+  transition: all 500ms ease-in;
+}
+
+.list-container.example-2 .list-leave {
+  max-height: 54px;
+  margin-top: 26px;
+  padding: 10px;
+  opacity: 1;
+}
+
+.list-container.example-2 .list-leave.list-leave-active {
+  max-height: 0;
+  margin-top: 0;
+  padding: 0;
+  transition: all 500ms ease-in;
+}
+
+.list-container button {
+  background-color: white;
+  border: 1px solid rgb(64, 72, 83);
+  border-radius: 5px;
+  padding: 10px;
+  margin-left: 5px;
+  outline: none;
+}
+
+.list-container {
+  font-size: 160%;
+}
